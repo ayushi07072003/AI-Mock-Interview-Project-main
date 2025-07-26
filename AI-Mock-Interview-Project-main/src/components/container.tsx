@@ -1,3 +1,11 @@
+/**
+ * Container Component
+ * 
+ * A reusable layout wrapper that centers content and applies consistent padding and width styles.
+ * Accepts custom className and children elements.
+ */
+
+
 import { cn } from "@/lib/utils";
 
 interface ContainerProps {
