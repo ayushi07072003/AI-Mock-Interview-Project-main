@@ -1,3 +1,12 @@
+/**
+ * CustomBreadCrumb Component
+ *
+ * Renders a breadcrumb navigation bar starting with Home,
+ * followed by optional intermediate links (breadCrumpItems),
+ * and ending with the current page (breadCrumbPage).
+ * Uses Tailwind styling and lucide-react icons.
+ */
+
 import {
     Breadcrumb,
     BreadcrumbItem,
