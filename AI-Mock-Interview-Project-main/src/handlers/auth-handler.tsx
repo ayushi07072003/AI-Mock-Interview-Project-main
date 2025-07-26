@@ -6,6 +6,15 @@ import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+/**
+ * AuthHandler Component
+ * 
+ * This component checks if a signed-in user's data exists in Firestore.
+ * If not, it creates a new user document using Clerk user info.
+ * It runs silently in the background and shows a loader while processing.
+ * No UI is rendered after the task is complete.
+ */
+
 const AuthHandler = () => {
   const { isSignedIn } = useAuth();
   const { user } = useUser();
